@@ -22,7 +22,7 @@ No recebimento de pagamento, o usuário ou lojista precisa receber notificação
 Este serviço deve ser RESTFul.
 
 <h2> Payload </h2>
-Faça uma proposta ❤️ de payload, se preferir, temos uma exemplo aqui:
+Faça uma proposta de payload, se preferir, temos uma exemplo aqui:
 
 POST /transaction
 
