@@ -27,7 +27,11 @@ Faça uma proposta ❤️ de payload, se preferir, temos uma exemplo aqui:
 POST /transaction
 
 {
+
     "value" : 100.00,
+    
     "payer" : 4,
+    
     "payee" : 15
+    
 }
