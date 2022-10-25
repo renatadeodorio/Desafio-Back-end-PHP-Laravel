@@ -1,6 +1,19 @@
-Usuario: {{ $user->name }}
+<h2>Usuário: {{ $user->name }}</h2>
 <br>
-Saldo: {{ $saldo }}
+@foreach ($balance as $balances)
+
+Saldo: {{$balances->balance}}
+
+@endforeach
 <br>
-<button>Transferencia</button>
-<button>Histórico de Transferencia</button>
+@if ($user->type==="Comum")
+ <a href="{{ route('transfers.show', $user->id) }}">Transferir</a>
+@endif
+<button>Histórico de Transferência</button>
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
-Usuarios
+<h1>Usuários</h1>
+
 @foreach ($users as $user)
     <form action="{{url('transfers', ['user_id'=>$user->id])}}">
         <p>{{ $user->name }} ({{ $user->type }})</p>
