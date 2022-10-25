@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('transferencias', function (Blueprint $table) {
             $table->id();
+            $table->foreignUuid('de_usuario_id');
+            $table->foreignUuid('para_usuario_id');
+            $table->decimal('saldo');
             $table->timestamps();
         });
     }

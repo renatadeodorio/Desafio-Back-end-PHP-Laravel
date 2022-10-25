@@ -14,11 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->uuid('id')->primary(); //uso do uuid um pouco mais confiável por se tratar de transações financeiras
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('document_id')->unique();
+            $table->id();
+            $table->string('name', 10);
+            $table->string('email', 50)->unique();
+            $table->string('document_id', 11)->unique();
             $table->string('password');
+            $table->string('type', 20);
             $table->timestamps();
         });
     }
