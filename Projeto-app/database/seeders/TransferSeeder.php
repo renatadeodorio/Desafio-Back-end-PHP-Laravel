@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Carteira;
+use App\Models\Transfer;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CarteirasSeeder extends Seeder
+class TransferSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,14 +15,10 @@ class CarteirasSeeder extends Seeder
      */
     public function run()
     {
-        Carteira::create([
-            'user_id'=> '1',
-            'saldo'=> 500,
-        ]);
-
-        Carteira::create([
-            'user_id'=> '2',
-            'saldo'=> 700,
+        Transfer::create([
+            'de_user_id' => '1',
+            'para_user_id' => '2',
+            'balance' => 1000,
         ]);
     }
 }

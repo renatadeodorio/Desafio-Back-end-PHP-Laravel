@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Usuario extends Model
+class User extends Model
 {
     use HasFactory;
 
@@ -20,6 +20,11 @@ class Usuario extends Model
     protected $hidden = [
         'password',
     ];
+
+    public function Wallet()
+    {
+        return $this->hasOne(Wallet::class);
+    }
 
 }
 
