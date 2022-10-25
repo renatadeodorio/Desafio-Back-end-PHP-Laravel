@@ -16,4 +16,6 @@ use App\Http\Controllers\TransferController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('welcome');
-Route::get('/transfers/{id}', [TransferController::class, 'index'])->name('transfers');
+Route::get('/transfers/{id}', [TransferController::class, 'index'])->name('transfers.index');
+Route::get('/user/{id}/transfers', [TransferController::class, 'show'])->name('transfers.show');
+Route::post('/user/transfered', [TransferController::class, 'store'])->name('transfered.store');
