@@ -26,5 +26,12 @@ class User extends Model
         return $this->hasOne(Wallet::class);
     }
 
+    public function getWallet($id)
+    {
+        $user = $this->user->find($id);
+        return $user->wallet()->get();
+    }
+
+
 }
 
