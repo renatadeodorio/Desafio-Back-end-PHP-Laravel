@@ -17,10 +17,7 @@ class HomeController extends Controller
     }
 
     public function index() {
-
-        $users=$this ->user->all();
+        $users=$this->user->all();
         return view('welcome', compact('users'));
-
     }
-
 }
