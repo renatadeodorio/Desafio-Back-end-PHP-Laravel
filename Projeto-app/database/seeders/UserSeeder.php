@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'name' => 'Renata',
             'email'=> 'renata@gmail.com',
             'document_id'=> '1111111111',
-            'password'=> Hash::make('12345678'),
+            'password'=> '123456',
             'type'=> 'Comum',
         ]);
 
@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
             'name' => 'Roberta',
             'email'=> 'roberta@gmail.com',
             'document_id'=> '22222222222',
-            'password'=> Hash::make('12345678'),
+            'password'=> '123456',
             'type'=> 'Comum',
         ]);
 
@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
             'name' => 'Renan',
             'email'=> 'renan@gmail.com',
             'document_id'=> '41713588848',
-            'password'=> Hash::make('12345678'),
+            'password'=> '123456',
             'type'=> 'Lojista',
         ]);
 
