@@ -29,5 +29,26 @@ class WalletSeeder extends Seeder
             'user_id'=> '3',
             'balance'=> 800,
         ]);
+
+        Wallet::create([
+            'user_id'=> '4',
+            'balance'=> 1800,
+        ]);
+
+        Wallet::create([
+            'user_id'=> '5',
+            'balance'=> 700,
+        ]);
+
+        Wallet::create([
+            'user_id'=> '6',
+            'balance'=> 800,
+        ]);
+
+        Wallet::create([
+            'user_id'=> '7',
+            'balance'=> 800,
+        ]);
     }
+
 }

@@ -40,6 +40,37 @@ class UserSeeder extends Seeder
             'type'=> 'Lojista',
         ]);
 
+        User::create([
+            'name' => 'Rafaela',
+            'email'=> 'rafaela@gmail.com',
+            'document_id'=> '41713588847',
+            'password'=> '123456',
+            'type'=> 'Comum',
+        ]);
+
+        User::create([
+            'name' => 'João',
+            'email'=> 'joao@gmail.com',
+            'document_id'=> '41713588841',
+            'password'=> '123456',
+            'type'=> 'Lojista',
+        ]);
+
+        User::create([
+            'name' => 'Diego',
+            'email'=> 'diego@gmail.com',
+            'document_id'=> '41713588845',
+            'password'=> '123456',
+            'type'=> 'Lojista',
+        ]);
+
+        User::create([
+            'name' => 'Ives',
+            'email'=> 'ives@gmail.com',
+            'document_id'=> '41713588844',
+            'password'=> '123456',
+            'type'=> 'Comum',
+        ]);
 
     }
 }
